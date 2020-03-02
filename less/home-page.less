@@ -1,1 +1,92 @@
 // Home Content
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+
+    .home-top {
+        background-color: @main-green;
+        padding-top: 50rem;
+
+        .home-intro {
+            width: 50%;
+            padding: 2% 5%;
+            line-height: 2;
+            text-align: center;
+            margin: 0 auto;
+            background-color: @main-yellow;
+
+            h1 {
+                font-size: 4.5rem;
+            }
+            
+            p {
+                font-size: 2rem;
+            }
+
+            button {
+                font-size: 2.2rem;
+                margin: 2.5rem 4rem 0;
+                border: 1px solid @accent-green;
+                color: white;
+                border-radius: 1rem;
+                padding: 0.5rem 1rem;
+                background-color: @accent-green;
+            }
+        } // End of home intro
+
+        .home-what {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: @accent-yellow;
+
+            h2 {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    .home-middle {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 90%;
+        align-content: space-between;
+
+        section {
+            width: 46%;
+            padding: 2rem;
+            border: 2px solid black;
+            border-radius: 1rem;
+            margin: 0 0 3rem;
+            text-align: center;
+            line-height: 2;
+
+            h3 {
+                font-size: 2.8rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+            }
+
+            button {
+                font-size: 2.2rem;
+                margin: 2.5rem 4rem 0;
+                border: 1px solid @accent-green;
+                color: white;
+                border-radius: 1rem;
+                padding: 0.5rem 1rem;
+                background-color: @accent-green;
+            }
+        }
+    }
+
+    #mid-h2 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+}
