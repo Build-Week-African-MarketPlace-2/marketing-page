@@ -2,28 +2,59 @@
 .container-about {
     font-size: 1.5rem;
     font-family: @main-font;
-    h1{
-        font-size:3rem;
-        font-family: @header-font;
-    }
-.topSection {
-    .testBorder();
-    .CommonFlex();
-    justify-content: space-evenly;
-    max-width: 100vw;
-    width:95%;
-    margin: 0 auto;
-    div{
+        h1{
+            font-size:3.5rem;
+            font-family: @header-font;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+        h5{
+            font-size:1.8rem;
+        }
+    .topSection {
         .testBorder();
-        padding: 3%;
-        display: flex;
+        .CommonFlex();
+        justify-content: space-evenly;
+        max-width: 100vw;
+        width:95%;
+        margin: 0 auto;
+        div{
+            .testBorder();
+            padding: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                    width: 40%;
+                margin: 0 auto;
+            }
+        }
+    }//end of topSection
+
+    .headlineSection{
+        .testBorder();
+        .CommonFlex();
+        justify-content: space-evenly;
+        max-width: 100vw;
+        width:95%;
+        margin: 0 auto;
+        text-align: center;
+    }//end of headlineSection
+
+    .infoSection{
+        .testBorder();
+        .CommonFlex();
         flex-direction: column;
-        justify-content: center;
-        img{
-            width: 40%;
-            margin: 0 auto;
+        justify-content: space-evenly;
+        max-width: 100vw;
+        width:95%;
+        margin: 0 auto;
+        padding: 2%;
+
+        h3{
+            text-align: center;
         }
     }
-}//end of topSection
 
 }
