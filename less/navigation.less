@@ -1,1 +1,53 @@
 // Navigation code here
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: @accent-green;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+        
+        .logo-container {
+            
+            #logo{
+                font-size: 2.4rem;
+            }
+
+            #logo-dot {
+                color: @accent-yellow;
+            }
+        }
+
+        .links {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .sign-in {
+
+            a {
+                padding: 1rem 1.5rem;
+                border: 2px solid @accent-yellow;
+                border-radius: 1.5rem;
+                background-color: @main-yellow;
+                color: @accent-green;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+        }
+    }
+}

@@ -128,71 +128,151 @@ table {
 }
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
 }
-.container-about {
-  font-size: 1.5rem;
-  font-family: 'Open Sans Condensed';
+body {
+  font-size: 1.6rem;
 }
-.container-about h1 {
-  font-size: 3.5rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   font-family: 'Kalam';
 }
-.container-about h3 {
-  font-size: 2.5rem;
+p {
+  font-family: 'Open Sans Condensed';
 }
-.container-about h5 {
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #527318;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+header nav .logo-container #logo {
+  font-size: 2.4rem;
+}
+header nav .logo-container #logo-dot {
+  color: #feb72b;
+}
+header nav .links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .sign-in a {
+  padding: 1rem 1.5rem;
+  border: 2px solid #feb72b;
+  border-radius: 1.5rem;
+  background-color: #ffe75e;
+  color: #527318;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+small {
+  font-size: 0.7rem;
+}
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-container .home-top {
+  background-color: #899857;
+  padding-top: 50rem;
+}
+.main-container .home-top .home-intro {
+  width: 50%;
+  padding: 2% 5%;
+  line-height: 2;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ffe75e;
+}
+.main-container .home-top .home-intro h1 {
+  font-size: 4.5rem;
+}
+.main-container .home-top .home-intro p {
+  font-size: 2rem;
+}
+.main-container .home-top .home-intro button {
+  font-size: 2.2rem;
+  margin: 2.5rem 4rem 0;
+  border: 1px solid #527318;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #527318;
+}
+.main-container .home-top .home-what {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #feb72b;
+}
+.main-container .home-top .home-what h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.main-container .home-middle {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  align-content: space-between;
+}
+.main-container .home-middle section {
+  width: 46%;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 0 0 3rem;
+  text-align: center;
+  line-height: 2;
+}
+.main-container .home-middle section h3 {
+  font-size: 2.8rem;
+}
+.main-container .home-middle section p {
   font-size: 1.8rem;
 }
-.container-about .topSection {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: space-evenly;
-  max-width: 100vw;
-  width: 95%;
-  margin: 0 auto;
+.main-container .home-middle section button {
+  font-size: 2.2rem;
+  margin: 2.5rem 4rem 0;
+  border: 1px solid #527318;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #527318;
 }
-.container-about .topSection div {
-  border: 1px solid red;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.container-about .topSection div img {
-  width: 40%;
-  margin: 0 auto;
-}
-.container-about .headlineSection {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: space-evenly;
-  max-width: 100vw;
-  width: 95%;
-  margin: 0 auto;
+.main-container #mid-h2 {
   text-align: center;
+  font-size: 3.5rem;
 }
-.container-about .infoSection {
-  border: 1px solid red;
+body .topSection {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 100vw;
-  width: 95%;
-  margin: 0 auto;
-  padding: 2%;
+  max-width: 700px;
 }
-.container-about .infoSection h3 {
-  text-align: center;
+body .topSection div img {
+  width: 30%;
 }
+
