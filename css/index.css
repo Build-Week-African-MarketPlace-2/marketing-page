@@ -194,7 +194,9 @@ small {
   margin: 0 auto;
 }
 .main-container .home-top {
-  background-color: #899857;
+  background-image: url(/images/Background-Img-Two.jpg);
+  background-size: cover;
+  background-position: center;
   padding-top: 50rem;
 }
 .main-container .home-top .home-intro {
@@ -203,7 +205,8 @@ small {
   line-height: 2;
   text-align: center;
   margin: 0 auto;
-  background-color: #ffe75e;
+  background-color: #899857;
+  border-radius: 5px;
 }
 .main-container .home-top .home-intro h1 {
   font-size: 4.5rem;
@@ -266,21 +269,25 @@ small {
   font-size: 3.5rem;
 }
 .container-about {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-family: 'Open Sans Condensed';
+  background-image: url(/images/Background-Img-One.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .container-about h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-family: 'Kalam';
 }
 .container-about h3 {
-  font-size: 2.5rem;
+  font-family: 'Kalam';
+  font-size: 3.5rem;
 }
 .container-about h5 {
-  font-size: 1.8rem;
+  font-size: 2.7rem;
 }
 .container-about .topSection {
-  border: 1px solid red;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -291,7 +298,6 @@ small {
   margin: 0 auto;
 }
 .container-about .topSection div {
-  border: 1px solid red;
   padding: 1%;
   display: flex;
   flex-direction: column;
@@ -300,21 +306,24 @@ small {
 .container-about .topSection div img {
   width: 40%;
   margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 50px 5px #feb72b;
 }
 .container-about .headlineSection {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   justify-content: space-evenly;
   max-width: 100vw;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
+  padding: 1%;
   text-align: center;
+  background-color: #899857;
 }
 .container-about .infoSection {
-  border: 1px solid red;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -328,4 +337,20 @@ small {
 }
 .container-about .infoSection h3 {
   text-align: center;
+}
+.container-about footer {
+  background-color: #ffe75e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+  font-size: 1.5rem;
+}
+.container-about footer ul {
+  display: flex;
+  padding: 0 1%;
+}
+.container-about footer ul li {
+  padding: 0 2%;
 }
