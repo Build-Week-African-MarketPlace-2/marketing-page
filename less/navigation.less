@@ -3,53 +3,81 @@ header {
     width: 100vw;
     height: 10vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: @accent-green;
-​
+    @media @mobile{
+        flex-direction: column;
+        height: 35vh;
+    }
+
     nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 auto;
-            width: 80%;
-             a {
-                text-decoration: none;
-                color: white;
-                    font-size: 2rem;
-                }
-            .logo-container {
-                
-                #logo{
-                    font-size: 2.4rem;
-                }
-    ​
-                #logo-dot {
-                    color: @accent-yellow;
-                }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+        @media @mobile{
+            flex-direction: column;
+            justify-content: space-evenly;
+            width:100%;
+            text-align: center;
+            div{
+                width:100%;
+                padding: 2% 0;
+                border-bottom: 1px solid @main-yellow
             }
-    ​
-            .links {
-                width: 30%;
-                display: flex;
-                justify-content: space-between;
-                
+        }
+        
+        .logo-container {
+            @media @mobile{
+                text-align: center;
+            }
+            #logo{
+                font-size: 2rem;
             }
 
-    ​
-            .sign-in {
-    ​
-                a {
-                    padding: 1rem 1.5rem;
-                    border: 2px solid @accent-yellow;
-                    border-radius: 1.5rem;
-                    background-color: @main-yellow;
-                    color: @accent-green;
+            #logo-dot {
+                color: @accent-yellow;
+            }
+        }
+
+        .links {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            @media @mobile{
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                border: none;
+                a{
+                    padding: 1%;
+                    border-bottom: 1px solid @main-yellow
                 }
             }
-    ​
-           
+
+
         }
+
+        .sign-in {
+            @media @mobile{
+                margin: 1%;
+                padding-bottom: 5%;
+            }
+            a {
+                padding: 0.5rem 1.5rem;
+                border: 2px solid @accent-yellow;
+                border-radius: 1.5rem;
+                background-color: @main-yellow;
+                color: @accent-green;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
 }
