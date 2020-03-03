@@ -1,7 +1,11 @@
 // Mixins Here
-.CommonFlex(@Direct:row, @justify:space-between, @align:center){
+.CommonFlex(@Direct:row, @justify:space-around, @align:center){
     display: flex;
     flex-direction: @Direct;
     justify-content: @justify;
     align-items: @align;
+}
+
+.testBorder(){
+    border: 1px solid red;
 }
