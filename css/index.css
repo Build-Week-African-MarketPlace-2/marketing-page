@@ -210,23 +210,57 @@ header nav .links {
     border-bottom: 1px solid #ffe75e;
   }
 }
+header nav .links a:hover {
+  animation-name: hoverAnimate;
+  animation-duration: 2s;
+}
 @media (max-width: 500px) {
   header nav .sign-in {
     margin: 1%;
     padding-bottom: 5%;
   }
 }
-header nav .sign-in a {
+header nav .sign-in #sign-in-btn {
   padding: 0.5rem 1.5rem;
   border: 2px solid #feb72b;
   border-radius: 1.5rem;
   background-color: #ffe75e;
   color: #527318;
 }
-header nav a {
+header nav .sign-in #sign-in-btn a:hover {
+  animation-name: singnHover;
+  animation-duration: 2s;
+}
+header a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+  border-radius: 1.5rem;
+}
+@keyframes hoverAnimate {
+  50% {
+    background-color: #feb72b;
+    padding: 2%;
+    color: black;
+  }
+  100% {
+    background-color: none;
+    color: white;
+  }
+}
+@keyframes signHover {
+  50% {
+    background-color: #899857;
+    color: #feb72b;
+    font-size: 1.8rem;
+    padding: 0rem 1rem;
+  }
+  100% {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: #ffe75e;
+    color: #527318;
+  }
 }
 small {
   font-size: 0.7rem;
@@ -356,6 +390,11 @@ small {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  .container-about {
+    background-size: auto;
+  }
+}
 .container-about h1 {
   font-size: 3rem;
   font-family: 'Kalam';
@@ -454,6 +493,7 @@ small {
 }
 .container-about .infoSection h3 {
   text-align: center;
+  margin-top: 2%;
 }
 .container-about footer {
   background-color: #ffe75e;
