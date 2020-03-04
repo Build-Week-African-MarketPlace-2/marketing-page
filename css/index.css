@@ -130,7 +130,7 @@ table {
   box-sizing: border-box;
   max-width: 100%;
 }
-html {
+​ html {
   font-size: 62.5%;
 }
 body {
@@ -159,7 +159,7 @@ header {
 @media (max-width: 500px) {
   header {
     flex-direction: column;
-    height: 31vh;
+    height: 35vh;
   }
 }
 header nav {
@@ -188,7 +188,7 @@ header nav {
   }
 }
 header nav .logo-container #logo {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 header nav .logo-container #logo-dot {
   color: #feb72b;
@@ -217,7 +217,7 @@ header nav .links {
   }
 }
 header nav .sign-in a {
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border: 2px solid #feb72b;
   border-radius: 1.5rem;
   background-color: #ffe75e;
@@ -226,7 +226,7 @@ header nav .sign-in a {
 header nav a {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 small {
   font-size: 0.7rem;
@@ -239,13 +239,13 @@ small {
   background-image: url(/images/Background-Img-Two.jpg);
   background-size: cover;
   background-position: center;
-  padding-top: 50rem;
+  padding-top: 30rem;
 }
 @media (max-width: 500px) {
   .main-container .home-top {
     padding-top: 20rem;
     background-position: center;
-    background-size: 175% 185%;
+    background-size: 175% 175%;
   }
 }
 .main-container .home-top .home-intro {
@@ -260,17 +260,18 @@ small {
 @media (max-width: 500px) {
   .main-container .home-top .home-intro {
     width: 95%;
+    line-height: 1;
   }
 }
 .main-container .home-top .home-intro h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 .main-container .home-top .home-intro p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .main-container .home-top .home-intro button {
-  font-size: 2.2rem;
-  margin: 2.5rem 4rem 0;
+  font-size: 1.6rem;
+  margin: 2rem 4rem 0;
   border: 1px solid #527318;
   color: white;
   border-radius: 1rem;
@@ -317,7 +318,7 @@ small {
   font-size: 2.8rem;
 }
 .main-container .home-middle section p {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .main-container .home-middle section button {
   font-size: 2.2rem;
@@ -333,22 +334,22 @@ small {
   font-size: 3.5rem;
 }
 .container-about {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-family: 'Open Sans Condensed';
   background-image: url(/images/Background-Img-One.jpg);
   background-position: center;
   background-size: cover;
 }
 .container-about h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: 'Kalam';
 }
 .container-about h3 {
   font-family: 'Kalam';
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .container-about h5 {
-  font-size: 2.7rem;
+  font-size: 1.7rem;
 }
 .container-about .topSection {
   color: white;
@@ -434,7 +435,7 @@ small {
   justify-content: center;
   align-items: center;
   padding: 2% 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .container-about footer ul {
   display: flex;
@@ -442,4 +443,8 @@ small {
 }
 .container-about footer ul li {
   padding: 0 2%;
+}
+.container-about footer ul li a {
+  text-decoration: none;
+  color: black;
 }
