@@ -356,6 +356,11 @@ small {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  .container-about {
+    background-size: auto;
+  }
+}
 .container-about h1 {
   font-size: 3rem;
   font-family: 'Kalam';
@@ -454,6 +459,7 @@ small {
 }
 .container-about .infoSection h3 {
   text-align: center;
+  margin-top: 2%;
 }
 .container-about footer {
   background-color: #ffe75e;
