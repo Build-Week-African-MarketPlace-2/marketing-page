@@ -8,10 +8,14 @@
         background-size: cover;
         background-position: center;
         padding-top: 30rem;
-        @media @mobile{
-            padding-top: 20rem;
+        @media @tablet{
+            padding-top: 20rem; 
             background-position: center;
             background-size: 175% 175%;
+        }
+        @media @mobile{
+            padding-top: 20rem;
+           
         }
        
         .home-intro {
@@ -22,6 +26,9 @@
             margin: 0 auto;
             background-color: @main-green;
             border-radius: 5px;
+            @media @tablet{
+                width: 80%;
+            }
             @media @mobile{
                 width: 95%;
                 line-height: 1;        
@@ -94,6 +101,11 @@
                 border-radius: 1rem;
                 padding: 0.5rem 1rem;
                 background-color: @accent-green;
+
+                @media @tablet{
+                    font-size: 2rem;
+                    margin: 1rem;
+                }
             }
         }
     }
