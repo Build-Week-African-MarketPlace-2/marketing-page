@@ -159,7 +159,7 @@ header {
 @media (max-width: 500px) {
   header {
     flex-direction: column;
-    height: 35vh;
+    height: 38vh;
   }
 }
 header nav {
@@ -206,7 +206,7 @@ header nav .links {
     border: none;
   }
   header nav .links a {
-    padding: 1%;
+    padding: 2%;
     border-bottom: 1px solid #ffe75e;
   }
 }
@@ -235,13 +235,13 @@ header a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  border-radius: 1.5rem;
 }
 @keyframes hoverAnimate {
   50% {
     background-color: #feb72b;
     padding: 2%;
     color: black;
+    border-radius: 1rem;
   }
   100% {
     background-color: none;
@@ -310,6 +310,11 @@ small {
 .main-container .home-top .home-intro h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .main-container .home-top .home-intro h1 {
+    font-size: 3.2rem;
+  }
+}
 .main-container .home-top .home-intro p {
   font-size: 1.5rem;
 }
@@ -322,6 +327,11 @@ small {
   padding: 0.5rem 1rem;
   background-color: #527318;
 }
+@media (max-width: 500px) {
+  .main-container .home-top .home-intro button {
+    margin: 3%;
+  }
+}
 .main-container .home-top .home-what {
   text-align: center;
   padding: 2rem 0;
@@ -330,6 +340,11 @@ small {
 .main-container .home-top .home-what h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container .home-top .home-what h2 {
+    font-size: 3.2rem;
+  }
 }
 .main-container .home-middle {
   display: flex;
@@ -425,9 +440,7 @@ small {
 @media (max-width: 500px) {
   .container-about .topSection {
     background-color: rgba(50, 50, 50, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 0 30px 1px grey;
-    margin: 2%;
+    box-shadow: 0 5px 30px 5px grey;
   }
   .container-about .topSection h1 {
     text-align: center;
@@ -448,6 +461,7 @@ small {
 @media (max-width: 800px) {
   .container-about .topSection div img {
     width: 70%;
+    box-shadow: 0 1rem 50px 6px #feb72b;
   }
 }
 @media (max-width: 500px) {
@@ -472,8 +486,6 @@ small {
   .container-about .headlineSection {
     flex-direction: column;
   }
-}
-@media (max-width: 500px) {
   .container-about .headlineSection div {
     padding: 1%;
   }

@@ -35,9 +35,8 @@
                 text-align: center;
             }
             background-color: rgba(50, 50, 50, 0.7);
-            border-radius: 10px;
-            box-shadow: 0 0 30px 1px grey;
-            margin: 2%;
+            box-shadow: 0 5px 30px 5px grey;
+            
         }
         div{
             padding: 1%;
@@ -51,6 +50,7 @@
                 box-shadow: 0 0 50px 5px @accent-yellow;
                 @media @tablet{
                     width:70%;
+                    box-shadow: 0 1rem 50px 6px @accent-yellow;
                 }
                 @media @mobile{
                     display: none;
@@ -70,12 +70,10 @@
         background-color: @main-green;
         @media @tablet {
             flex-direction: column;
-        }
-        @media @mobile{
-            
             div{
                 padding: 1%;
             }
+        }  
         }
     }//end of headlineSection
 
