@@ -8,7 +8,12 @@ header {
     background-color: @accent-green;
     @media @mobile{
         flex-direction: column;
-        height: 38vh;
+        @media (max-height:700px){
+            height: 38vh;
+        }
+        @media (max-height: 950px){
+            height:25vh;
+        }
     }
 
     nav {
